@@ -46,7 +46,7 @@ contract DEX is ERC20Base {
         return _liquidity;
     }
 
-    //function to remove liquidity. Essentially, take your liquidity tokens, burn it and receive back FLO token
+    //function to remove liquidity. Essentially, take your liquidity tokens, burn it and receive back FLOR token
     function removeLiquidity(uint256 _amount) public returns (uint256, uint256){
         require(_amount > 0, "Amount should be greater than zero");
         uint256 _reservedEth = address(this).balance;
